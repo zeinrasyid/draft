@@ -14,3 +14,5 @@ we did following steps each page:
 6. takes in a user question, then extract `entities` from that question.
 7. perform `prefiltering` of the `entities` to get top-n hits from `entities matching` from both text and image index.
 8. uses LLM in the loop to go over each hit and summarize all response using `Claude 3 Sonnet`.
+
+The process of `3_rag_inference` will be converted and put on `AWS Lambda`, to get the question from Webapp API.
